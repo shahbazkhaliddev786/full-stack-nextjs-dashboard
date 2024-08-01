@@ -11,7 +11,7 @@ export default function Settings() {
             <DashboardLayout>
                 <ContentLayout>
                     <h1 className="text-xl mb-2 font-bold font-aleo text-[#188331] capitalize">Admin Dashboard Settings</h1>
-                    <div className="shadow-dark-gray">
+                    <div>
                         <Tabs defaultValue="users">
                             <TabsList className="rounded-none">
                                 <TabsTrigger value="users" className="tabs-corner font-lato">Users</TabsTrigger>
