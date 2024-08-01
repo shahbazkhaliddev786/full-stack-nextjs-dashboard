@@ -236,7 +236,6 @@ export default function MatchedDeposits() {
                                                 </TableCell>
                                             </TableRow>
                                         ))}
-
                                     </TableBody>
                                 </Table>
                             </div>
