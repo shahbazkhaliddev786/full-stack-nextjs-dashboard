@@ -1,0 +1,10 @@
+import DashboardLayout from "@/components/Layout";
+import Dashboard from "./dashboard/page";
+
+export default function Home() {
+  return (
+    <div>
+        <Dashboard />
+    </div>
+  );
+}
