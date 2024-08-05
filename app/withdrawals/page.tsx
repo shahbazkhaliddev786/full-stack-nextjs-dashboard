@@ -24,9 +24,9 @@ import {
 } from "@/components/ui/alert-dialog"
 import { useState } from "react";
 import Image from "next/image";
-import Decline from "@/components/withdrawals/decline";
-import ClientDetail from "@/components/matched/client-detail";
-import DeclineDetail from "@/components/withdrawals/decline-detail";
+import Decline from "@/components/modals/withdrawals/decline";
+import ClientDetail from "@/components/modals/matched/client-detail";
+import DeclineDetail from "@/components/modals/withdrawals/decline-detail";
 import ContentLayout from "@/components/ContentLayout";
 
 const data = [

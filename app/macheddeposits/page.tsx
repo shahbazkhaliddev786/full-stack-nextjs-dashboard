@@ -22,9 +22,9 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import { useState } from "react";
-import Decline from "@/components/matched/decline";
-import ClientDetail from "@/components/matched/client-detail";
-import ManualTransactions from "@/components/matched/manual-transactions";
+import Decline from "@/components/modals/matched/decline";
+import ClientDetail from "@/components/modals/matched/client-detail";
+import ManualTransactions from "@/components/modals/matched/manual-transactions";
 import ContentLayout from "@/components/ContentLayout";
 
 

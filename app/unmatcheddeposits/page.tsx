@@ -10,7 +10,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
-import MatchDetails from "@/components/unmatched/match-details";
+import MatchDetails from "@/components/modals/unmatched/match-details";
 
 const data = [
     {

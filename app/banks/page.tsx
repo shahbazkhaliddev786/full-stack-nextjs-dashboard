@@ -12,9 +12,9 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import ContentLayout from "@/components/ContentLayout";
-import AddModal from "@/components/banks/add";
-import DeleteModal from "@/components/banks/delete";
-import ViewModal from "@/components/banks/view";
+import AddModal from "@/components/modals/banks/add";
+import DeleteModal from "@/components/modals/banks/delete";
+import ViewModal from "@/components/modals/banks/view";
 
 const southAfrica = [
     {
