@@ -23,9 +23,9 @@ export default function ClientDetail() {
         <>
             <button
                 onClick={toggleModal}
-                className="p-2 w-[5rem] text-white rounded"
+                className="h-[10px] w-[10px] font-lato bg-[#005640] text-white rounded-[3px]"
             >
-                Delete
+                
             </button>
             <Transition appear show={isOpen} as={Fragment}>
                 <Dialog as="div" className="relative z-50" onClose={toggleModal}>

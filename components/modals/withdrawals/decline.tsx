@@ -32,7 +32,7 @@ export default function Decline() {
         <>
             <AlertDialog open={isAlertDialogOpen} onOpenChange={setIsAlertDialogOpen}>
                 <AlertDialogTrigger asChild>
-                    <Button onClick={openAlertDialog} className="text-xs h-7 font-lato text-red-500 bg-white">X</Button>
+                    <Button onClick={openAlertDialog} className="text-[23px] h-7 font-lato text-[#AA322DBF] bg-white hover:bg-white">X</Button>
                 </AlertDialogTrigger>
                 <AlertDialogContent className="flex pt-4 flex-col outline outline-green-500">
                     <AlertDialogHeader className='flex flex-col justify-center items-center mx-auto'>

@@ -20,7 +20,7 @@ export default function AddModal() {
         <>
             <button
                 onClick={toggleModal}
-                className="p-2 w-[5rem] font-lato uppercase text-sm text-white rounded bg-green-600 hover:bg-green-700"
+                className="p-2 w-[100%] h-[100%] font-lato uppercase text-[16px] text-white"
             >
                 Add
             </button>

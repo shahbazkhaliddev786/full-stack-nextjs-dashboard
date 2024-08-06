@@ -20,7 +20,7 @@ export default function ManualTransactions() {
         <>
             <button
                 onClick={toggleModal}
-                className="p-2 w-[4rem] font-lato text-white rounded"
+                className="h-[10px] w-[10px] font-lato bg-[#005640] text-white rounded-[3px]"
             >
 
             </button>

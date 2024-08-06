@@ -21,7 +21,7 @@ export default function ViewModal() {
         <>
             <button
                 onClick={toggleModal}
-                className="text-white rounded hover:bg-green-700"
+                className="text-white rounded "
             >
                 <Image height={25} width={25} src="/up arrow.png" alt="Table icon"  className="text-green-500 hover:bg-green-700"/>
             </button>

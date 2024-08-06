@@ -1,4 +1,4 @@
-import SignOutPage from "@/components/signup/index";
+import SignOutPage from "@/components/signout/index";
 
 export default function SignOut() {
     return (

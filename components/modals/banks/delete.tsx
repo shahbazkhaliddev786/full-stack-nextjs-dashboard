@@ -46,7 +46,7 @@ export default function DeleteModal() {
         <>
             <button
                 onClick={toggleModal}
-                className="p-2 w-[5rem] uppercase text-sm text-white rounded"
+                className="p-2 w-[100%] h-[100%] uppercase text-[16px] text-white"
             >
                 Delete
             </button>

@@ -31,7 +31,7 @@ export default function DeclineDetail() {
         <>
             <AlertDialog open={isAlertDialogOpen} onOpenChange={setIsAlertDialogOpen}>
                 <AlertDialogTrigger asChild>
-                    <button onClick={openAlertDialog} className="w-1.5 h-1.5 bg-black"></button>
+                    <button onClick={openAlertDialog} className="h-[10px] w-[10px] font-lato bg-[#005640] text-white rounded-[3px]"></button>
                 </AlertDialogTrigger>
                 <AlertDialogContent className="flex pt-4 flex-col outline outline-green-500">
                     <AlertDialogHeader className='flex flex-col justify-center mx-auto'>
@@ -39,11 +39,11 @@ export default function DeclineDetail() {
                         <form className="w-[30rem]">
                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                 <div className='flex justify-center items-center w-[40%]'><Label className="text-xs" htmlFor="RoutingNumber">Routing Number:</Label></div>
-                                <div className='w-[60%]'><Input type="text" id="RoutingNumber" name="RoutingNumber" placeholder='Sample Text' className="p-2 h-[2rem] text-xs border rounded w-[14rem] bg-gray-200 text-green-800" /></div>
+                                <div className='w-[60%]'><Input type="text" id="RoutingNumber" name="RoutingNumber" placeholder='Sample Text' className="p-2 h-[2rem] text-xs border rounded w-[14rem] bg-gray-200 text-green-800 placeholder:text-[#005640]" /></div>
                             </div>
                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                 <div className='flex justify-center -ml-2 w-[40%]'><Label className="text-xs" htmlFor="bankAddress">Bank Address:</Label></div>
-                                <div className='w-[60%]'><Textarea placeholder='Sample Text' className="p-2 ml-1 h-[2rem] text-xs border rounded w-[14rem] bg-gray-200 text-green-800" /></div>
+                                <div className='w-[60%]'><Textarea placeholder='Sample Text' className="p-2 ml-1 h-[2rem] text-xs border rounded w-[14rem] bg-gray-200 text-green-800 placeholder:text-[#005640]" /></div>
                             </div>
                         </form>
 
