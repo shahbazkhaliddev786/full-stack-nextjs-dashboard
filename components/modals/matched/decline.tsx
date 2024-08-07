@@ -1,54 +1,82 @@
-
 "use client"
-import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
+
+import { useState, Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { Input } from '@/components/ui/input';
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
 
 export default function Decline() {
+    const [isOpen, setIsOpen] = useState(false);
 
-    const [isAlertDialogOpen, setIsAlertDialogOpen] = useState(false);
-
-    const openAlertDialog = () => {
-        setIsAlertDialogOpen(true);
+    const toggleModal = () => {
+        setIsOpen(!isOpen);
+        document.body.style.overflow = 'hidden';
     };
-
-    const closeAlertDialog = () => {
-        setIsAlertDialogOpen(false);
-    }
 
     return (
         <>
-            <AlertDialog open={isAlertDialogOpen} onOpenChange={setIsAlertDialogOpen}>
-                <AlertDialogTrigger asChild>
-                    <Button onClick={openAlertDialog} className="text-[23px] h-[28px] w-[14px] text-[#AA322DBF] bg-white hover:bg-white -mb-2">X</Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent className="flex pt-4 flex-col outline outline-green-500">
-                    <AlertDialogHeader className='flex flex-col justify-center items-center mx-auto'>
-                        <Image width={80} height={80} src="/decline.png" alt="Release all payments" />
-                        <AlertDialogTitle className="capitalize text-xl my-4 text-red-600">Decline Deposit?</AlertDialogTitle>
-                        <AlertDialogDescription>
-                            Please provide reason to decline deposit.
-                        </AlertDialogDescription>
-                        <Textarea placeholder='Sample Text' className="p-1 w-[17rem] h-[2rem] text-xs border rounded bg-gray-200 text-green-800" />
-                    </AlertDialogHeader>
-                    <AlertDialogFooter className='mr-[9.7rem] mt-4 '>
-                        <AlertDialogAction className="py-1 px-3 text-sm w-[5rem] bg-green-500 hover:bg-green-600 text-white rounded" onClick={closeAlertDialog}>Decline</AlertDialogAction>
-                        <AlertDialogCancel className="py-1 px-3 text-sm w-[5rem] bg-red-500 hover:bg-red-600 text-white rounded" onClick={closeAlertDialog}>Cancel</AlertDialogCancel>
-                    </AlertDialogFooter>
-                </AlertDialogContent>
-            </AlertDialog>
+            <button
+                onClick={toggleModal}
+                className="text-[23px] h-[28px] w-[14px] text-[#AA322DBF] bg-white hover:bg-white -mb-2"
+            >
+                X
+            </button>
+            <Transition appear show={isOpen} as={Fragment}>
+                <Dialog as="div" className="relative z-50" onClose={toggleModal}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 bg-black bg-opacity-30" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 bg-[#F0F3EE] overflow-y-auto">
+                        <div className="flex items-center justify-center min-h-full text-center">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                            >
+                                <Dialog.Panel className="w-full max-w-lg px-[5rem] py-8 bg-white border-[#AA322D] border-[2px] rounded-lg shadow-xl transform transition-all">
+
+                                    <div className="mt-2 text-sm">
+                                        <div className='flex w-[100%] h-[100%] flex-col justify-center items-center  mx-auto'>
+                                            <Image width={125} height={125} src="/decline.png" alt="Decline Deposit" />
+
+                                            <Dialog.Title className="text-[22px] mt-[28px] font-aleo text-[#AA322D] font-medium text-left leading-6">
+                                                Decline Deposit?
+                                            </Dialog.Title>
+                                            <p className="mt-[14px]">Please provide reason to decline deposit.</p>
+                                            <Input placeholder='Sample Text' className="placeholder-top-left p-1 w-[17rem] h-[6rem] mt-[9px] text-xs border rounded bg-gray-200 text-green-800" />
+                                            <div className='mt-4 flex justify-center gap-[4px] w-full'>
+                                                <Button className="h-[42px] w-[99px] text-[14px] rounded-[10px] bg-[#00CE7E] hover:bg-green-600 text-white " onClick={toggleModal}>
+                                                    Decline
+                                                </Button>
+                                                <Button className="h-[42px] w-[99px] text-[14px] rounded-[10px] bg-[#AA322D] hover:bg-red-900 text-white " onClick={toggleModal}>
+                                                    Cancel
+                                                </Button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </Transition>
         </>
-    )
+    );
 }
+
+

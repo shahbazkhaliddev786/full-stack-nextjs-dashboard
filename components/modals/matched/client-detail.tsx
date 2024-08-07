@@ -41,7 +41,7 @@ export default function ClientDetail() {
                         <div className="fixed inset-0 bg-black bg-opacity-30" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 flex items-center justify-center overflow-y-auto">
+                    <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 bg-[#F0F3EE] overflow-y-auto">
                         <div className="flex items-center justify-center min-h-full p-4 text-center">
                             <Transition.Child
                                 as={Fragment}
@@ -53,7 +53,7 @@ export default function ClientDetail() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="text-lg font-lato font-medium text-left leading-6 text-green-800">
+                                    <Dialog.Title className="text-[24px] font-lato font-medium text-left leading-6 text-[#005640]">
                                         Client Details
                                     </Dialog.Title>
                                     <div className="mt-2 text-sm">
@@ -89,11 +89,11 @@ export default function ClientDetail() {
                                         </form>
                                     </div>
                                     <div className="mt-8 flex flex-col justify-center items-center space-x-2">
-                                        <Link href="#!" className="underline text-green-500 font-lato">View Full Profile</Link>
+                                        <Link href="#!" className="underline text-[#00CE7E] text-[20px] font-lato">View Full Profile</Link>
                                         
                                         <button
                                             onClick={toggleModal}
-                                            className=" text-sm font-lato mt-4 px-3 py-2 w-[5rem] bg-red-500 hover:bg-red-600 text-white rounded"
+                                            className=" text-[14px] font-lato mt-4 h-[42px] w-[100px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Close
                                         </button>

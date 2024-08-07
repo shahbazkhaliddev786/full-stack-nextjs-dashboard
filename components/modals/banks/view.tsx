@@ -51,7 +51,7 @@ export default function ViewModal() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="text-lg font-lato font-medium text-left leading-6 text-gray-900">
+                                    <Dialog.Title className="text-[22px] text-[#005640] font-lato font-medium text-left leading-6">
                                        View / Send Bank Account Details
                                     </Dialog.Title>
                                     <div className="mt-2 text-sm">
@@ -93,13 +93,13 @@ export default function ViewModal() {
                                         <div className="mt-2 flex justify-center space-x-2">
                                         <button
                                             onClick={toggleModal}
-                                            className="py-2 px-3 font-lato text-sm w-[5rem] bg-green-500 hover:bg-green-700 text-white rounded"
+                                            className="font-lato text-[14px] w-[99.77px] h-[42.48px] bg-[#00CE7E] hover:bg-green-700 text-white rounded-[10px]"
                                         >
                                             Send
                                         </button>
                                         <button
                                             onClick={toggleModal}
-                                            className="py-2 px-3 font-lato text-sm w-[5rem] bg-red-500 hover:bg-red-600 text-white rounded"
+                                            className="font-lato text-[14px] w-[99.77px] h-[42.48px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </button>

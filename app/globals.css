@@ -115,3 +115,12 @@
   background: white;
 }
 
+.placeholder-top-left::placeholder {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  transform: translateY(-50%);
+  padding-top: 1.5rem;
+  padding-left: 0.8rem;
+  text-align: left;
+}

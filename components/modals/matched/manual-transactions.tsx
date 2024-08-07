@@ -50,17 +50,17 @@ export default function ManualTransactions() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="text-lg font-lato font-medium text-left leading-6 text-green-700">
+                                    <Dialog.Title className="text-lg font-lato font-medium text-left leading-6 text-[#005640]">
                                         Manual Transactions Details
                                     </Dialog.Title>
                                     <div className="mt-2 h-[25rem] w-[25rem] flex justify-center items-center text-sm">
-                                        <h2 className="text-xl font-lato">?</h2>
+                                        <h2 className="text-[40px] font-lato">?</h2>
                                     </div>
                                     <div className="mt-8 flex flex-col justify-center items-center space-x-2">
                                         
                                         <button
                                             onClick={toggleModal}
-                                            className=" text-sm font-lato mt-4 py-2 px-3 w-[5rem] bg-red-500 hover:bg-red-600 text-white rounded"
+                                            className=" text-[14px] font-lato h-[42px] w-[99px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Close
                                         </button>

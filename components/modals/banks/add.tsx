@@ -38,8 +38,8 @@ export default function AddModal() {
                         <div className="fixed inset-0 bg-black bg-opacity-30" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 flex items-center justify-center overflow-y-auto">
-                        <div className="flex items-center justify-center min-h-full p-4 text-center">
+                    <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 bg-[#F0F3EE] overflow-y-auto">
+                        <div className="flex items-center justify-center min-h-full text-center">
                             <Transition.Child
                                 as={Fragment}
                                 enter="ease-out duration-300"
@@ -49,8 +49,8 @@ export default function AddModal() {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="text-lg font-lato font-medium text-left leading-6 text-gray-900">
+                                <Dialog.Panel className="w-full max-w-lg p-7 bg-white rounded-lg shadow-xl transform transition-all">
+                                    <Dialog.Title className="text-[22px] text-[#005640] font-lato font-medium text-left leading-6">
                                         Add New Bank Account
                                     </Dialog.Title>
                                     <div className="mt-2 text-sm">
@@ -74,7 +74,7 @@ export default function AddModal() {
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="accountName">Account Name:</Label></div>
                                                 <div className='w-[50%]'><Input type="text" id="accountName" name="accountName" placeholder='Sample Text' className="p-2 placeholder:text-[#005640] font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800" /></div>
                                             </div>
-                                            <div className='flex justify-center gap-2 mb-4 w-[100%]'>
+                                            <div className='flex justify-center gap-2 mb-4 w-[100%] ml-[6px]'>
                                                 <div className='flex justify-end items-center w-[16rem] text-xs'><Label className="text-xs font-lato" htmlFor="ach">ACH And Wire Routing Number:</Label></div>
                                                 <div className='w-[14] mr-[3.4rem]'><Input type="text" id="ach" name="ach" placeholder='Sample Text' className="p-2 placeholder:text-[#005640] font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800" /></div>
                                             </div>
@@ -99,7 +99,7 @@ export default function AddModal() {
                                     <div className="mt-4 flex justify-center space-x-2">
                                         <Button
                                             onClick={toggleModal}
-                                            className="p-1 text-sm w-[4rem] font-lato bg-green-500 hover:bg-green-700 text-white rounded"
+                                            className="text-[14px] w-[99.77px] h-[42.26px] rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
                                         >
                                             Add
 
@@ -107,7 +107,7 @@ export default function AddModal() {
                                         </Button>
                                         <Button
                                             onClick={toggleModal}
-                                            className="p-1 text-sm w-[4rem] font-lato bg-red-500 hover:bg-red-600 text-white rounded"
+                                            className="text-[14px] w-[99.77px] h-[42.26px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </Button>

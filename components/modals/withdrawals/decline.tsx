@@ -1,54 +1,99 @@
-
 "use client"
-import {
-    AlertDialog,
-    AlertDialogAction,
-    AlertDialogCancel,
-    AlertDialogContent,
-    AlertDialogDescription,
-    AlertDialogFooter,
-    AlertDialogHeader,
-    AlertDialogTitle,
-    AlertDialogTrigger,
-} from "@/components/ui/alert-dialog"
-import { Button } from "@/components/ui/button"
-import Image from "next/image";
-import { Textarea } from "@/components/ui/textarea";
-import { useState } from "react";
 
-export default function Decline() {
+import { useState, Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { Input } from '@/components/ui/input';
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
+import Image from 'next/image';
 
-    const [isAlertDialogOpen, setIsAlertDialogOpen] = useState(false);
+export default function DeclineModal() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [reason, setReason] = useState('');
 
-    const openAlertDialog = () => {
-        setIsAlertDialogOpen(true);
+    const toggleModal = () => {
+        setIsOpen(!isOpen);
+        document.body.style.overflow = isOpen ? 'auto' : 'hidden';
     };
 
-    const closeAlertDialog = () => {
-        setIsAlertDialogOpen(false);
-    }
+    const handleDecline = () => {
+        console.log("Decline reason:", reason);
+        toggleModal();
+    };
 
     return (
         <>
-            <AlertDialog open={isAlertDialogOpen} onOpenChange={setIsAlertDialogOpen}>
-                <AlertDialogTrigger asChild>
-                    <Button onClick={openAlertDialog} className="text-[23px] h-7 font-lato text-[#AA322DBF] bg-white hover:bg-white">X</Button>
-                </AlertDialogTrigger>
-                <AlertDialogContent className="flex pt-4 flex-col outline outline-green-500">
-                    <AlertDialogHeader className='flex flex-col justify-center items-center mx-auto'>
-                        <Image width={80} height={80} src="/decline.png" alt="Release all payments" />
-                        <AlertDialogTitle className="capitalize text-xl my-4 text-red-600 font-lato">Decline Withdrawals?</AlertDialogTitle>
-                        <AlertDialogDescription className="font-lato">
-                            Please provide reason to decline withdrawal:
-                        </AlertDialogDescription>
-                        <Textarea placeholder='Sample Text' className="p-1 font-lato w-[17rem] h-[2rem] text-xs border rounded bg-gray-200 text-green-800" />
-                    </AlertDialogHeader>
-                    <AlertDialogFooter className='mr-[9.7rem] mt-4 '>
-                        <AlertDialogAction className="py-1 px-3 font-lato text-sm w-[5rem] bg-green-500 hover:bg-green-600 text-white rounded" onClick={closeAlertDialog}>Decline</AlertDialogAction>
-                        <AlertDialogCancel className="py-1 px-3 font-lato text-sm w-[5rem] bg-red-500 hover:bg-red-600 text-white rounded" onClick={closeAlertDialog}>Cancel</AlertDialogCancel>
-                    </AlertDialogFooter>
-                </AlertDialogContent>
-            </AlertDialog>
+            <button
+                onClick={toggleModal}
+                className="w-[14px] h-[28px] font-lato uppercase text-[23px] text-[#AA322DBF]"
+            >
+                X
+            </button>
+            <Transition appear show={isOpen} as={Fragment}>
+                <Dialog as="div" className="relative z-50" onClose={toggleModal}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 bg-black bg-opacity-30" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 flex items-center justify-center bg-opacity-50 bg-[#F0F3EE] overflow-y-auto">
+                        <div className="flex items-center justify-center min-h-full text-center">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="ease-out duration-300"
+                                enterFrom="opacity-0 scale-95"
+                                enterTo="opacity-100 scale-100"
+                                leave="ease-in duration-200"
+                                leaveFrom="opacity-100 scale-100"
+                                leaveTo="opacity-0 scale-95"
+                            >
+                                <Dialog.Panel className="w-full px-[4rem] flex flex-col items-center border-[3px] border-[#AA322D] max-w-lg p-7 bg-white rounded-lg shadow-xl transform transition-all">
+                                    <Image src="/decline.png" height={120} width={120} alt="Declined withdrawals"/>
+                                    <Dialog.Title className="text-[22px] text-[#AA322D] font-lato mt-[28px] font-medium text-left leading-6">
+                                        Decline Withdrawals
+                                    </Dialog.Title>
+                                    <div className="mt-[14px] text-sm">
+                                        <form>
+                                            <div className='flex flex-col items-start mb-4'>
+                                                <Label className="text-[14px] font-lato" htmlFor="reason">Please provide a reason for the declined withdrawal:</Label>
+                                                <Input 
+                                                    id="reason"
+                                                    name="reason"
+                                                    placeholder='Sample text'
+                                                    className="placeholder-top-left h-[80px] placeholder:text-[#14302A] font-lato mt-[14px] text-xs border rounded bg-[#F0F3EE] text-[#14302A]"
+                                                    value={reason}
+                                                    onChange={(e) => setReason(e.target.value)}
+                                                />
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className="mt-4 flex justify-center space-x-2">
+                                        <Button
+                                            onClick={handleDecline}
+                                            className="text-[14px] w-[99.77px] h-[42.26px] rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
+                                        >
+                                            Decline
+                                        </Button>
+                                        <Button
+                                            onClick={toggleModal}
+                                            className="text-[14px] w-[99.77px] h-[42.26px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                        >
+                                            Cancel
+                                        </Button>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </Dialog>
+            </Transition>
         </>
-    )
+    );
 }
