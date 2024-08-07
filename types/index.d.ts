@@ -14,4 +14,3 @@ declare module "next-auth" {
     email: string;
   }
 }
-declare module 'bcryptjs';
