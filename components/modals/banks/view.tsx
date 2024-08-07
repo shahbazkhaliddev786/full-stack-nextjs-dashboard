@@ -39,7 +39,7 @@ export default function ViewModal() {
                         <div className="fixed inset-0 bg-black bg-opacity-30" />
                     </Transition.Child>
 
-                    <div className="fixed inset-0 flex items-center justify-center overflow-y-auto">
+                    <div className="fixed inset-0 bg-opacity-50 bg-[#F0F3EE] flex items-center justify-center overflow-y-auto">
                         <div className="flex items-center justify-center min-h-full p-4 text-center">
                             <Transition.Child
                                 as={Fragment}
