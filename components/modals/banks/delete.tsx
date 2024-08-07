@@ -2,7 +2,6 @@
 import { useState, Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { Input } from '@/components/ui/input';
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -85,7 +84,7 @@ export default function DeleteModal() {
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Textarea placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-red-600" /></div>
+                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-red-600" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="Reference">Reference:</Label></div>

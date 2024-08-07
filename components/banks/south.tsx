@@ -79,20 +79,24 @@ export default function SouthAfrica() {
                                 <TableCell className="font-lato text-xs">{row.active}</TableCell>
                                 <TableCell className="font-lato text-xs">{row.rank}</TableCell>
                                 <TableCell>
-                                    <input
-                                        className="w-[10px] h-[10px] appearance-none border border-[#005640] rounded-[3px] checked:bg-[#005640] checked:border-[#005640] checked:p-[1px]"
-                                        type="checkbox"
-                                        checked={row.default}
-                                        onChange={() => handleCheckboxChange(i, "default")}
-                                    />
+                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                        <input
+                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            type="checkbox"
+                                            checked={row.default}
+                                            onChange={() => handleCheckboxChange(i, "default")}
+                                        />
+                                    </div>
                                 </TableCell>
                                 <TableCell>
-                                    <input
-                                        className="w-[10px] h-[10px] appearance-none border border-[#005640] rounded-[3px] checked:bg-[#005640] checked:border-[#005640] checked:p-[1px]"
-                                        type="checkbox"
-                                        checked={row.intlDefault}
-                                        onChange={() => handleCheckboxChange(i, "intlDefault")}
-                                    />
+                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                        <input
+                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            type="checkbox"
+                                            checked={row.intlDefault}
+                                            onChange={() => handleCheckboxChange(i, "intlDefault")}
+                                        />
+                                    </div>
                                 </TableCell>
                                 <TableCell className="flex justify-between font-lato text-xs border-r-0">
                                     {row.details}

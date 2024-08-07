@@ -51,10 +51,10 @@ export default function ViewModal() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="text-[22px] text-[#005640] font-lato font-medium text-left leading-6">
+                                    <Dialog.Title className="text-[22px] text-[#005640] font-lato mb-4 font-medium text-left leading-6">
                                        View / Send Bank Account Details
                                     </Dialog.Title>
-                                    <div className="mt-2 text-sm">
+                                    <div className="mt-4 text-sm">
                                         <form>
 
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
@@ -75,7 +75,7 @@ export default function ViewModal() {
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Textarea placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="Reference">Reference:</Label></div>

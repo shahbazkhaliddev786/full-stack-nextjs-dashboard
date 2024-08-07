@@ -139,6 +139,7 @@ const data = [
     }
 ];
 
+
 export default function MatchedTable() {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -170,7 +171,7 @@ export default function MatchedTable() {
                                     <TableHead className="font-bold font-lato">Recipient</TableHead>
                                     <TableHead className="font-bold font-lato">Methods</TableHead>
                                     <TableHead className="flex gap-1 justify-start items-center mt-2 border-r-0">
-                                        <div className=" w-[20px] h-[20px] bg-white border-[#005640] border-[2px] flex justify-center items-center font-lato">
+                                        <div className="w-[20px] h-[20px] bg-white border-[#005640] border-[2px] flex justify-center items-center font-lato">
                                             <div>
                                                 <ClientDetail />
                                             </div>
@@ -208,10 +209,10 @@ export default function MatchedTable() {
                                         <TableCell className="w-full font-lato">
                                             {row.receivedAmount}
                                         </TableCell>
-                                        <TableCell className="text-green-600 underline w-full text-xs font-lato">
+                                        <TableCell className="text-[#005640] underline w-full text-xs font-lato">
                                             {row.recipient}
                                         </TableCell>
-                                        <TableCell className="w-full font-lato">
+                                        <TableCell className={`w-full font-lato ${row.methods === "Manual" ? "underline text-[#005640]" : ""}`}>
                                             {row.methods}
                                         </TableCell>
                                         <TableCell className="flex gap-1 justify-evenly w-full items-center border-r-0 font-lato">
@@ -300,4 +301,3 @@ export default function MatchedTable() {
         </>
     );
 }
-

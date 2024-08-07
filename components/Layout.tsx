@@ -2,11 +2,6 @@ import React from "react";
 import Header from "./header";
 import Sidebar from "./sidebar";
 
-// TODO:
-    // 1. Bank input check padding
-    // 2. Matched Deposit manuel underline
-    // 3. Replace all textarea tags with input
-
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (
         <>

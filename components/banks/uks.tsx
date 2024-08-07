@@ -46,17 +46,6 @@ const initialUK: Bank[] = [
     }
 ];
 
-const CustomCheckbox = ({ checked, onChange }: { checked: boolean, onChange: () => void }) => (
-    <div
-        className={`w-[10px] h-[10px] border-2 border-[#005640] rounded-[3px] flex items-center justify-center cursor-pointer ${checked ? 'bg-[#005640]' : 'bg-transparent'}`}
-        onClick={onChange}
-    >
-        {checked && (
-            <div className="w-[4px] h-[4px] bg-[#005640] rounded-[3px] m-[1px]"></div>
-        )}
-    </div>
-);
-
 export default function UK() {
     const [banks, setBanks] = useState(initialUK);
 
@@ -89,16 +78,26 @@ export default function UK() {
                                 <TableCell className="font-lato text-xs">{row.active}</TableCell>
                                 <TableCell className="font-lato text-xs">{row.rank}</TableCell>
                                 <TableCell>
-                                    <CustomCheckbox
-                                        checked={row.default}
-                                        onChange={() => handleCheckboxChange(i, "default")}
-                                    />
+
+                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                        <input
+                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            type="checkbox"
+                                            checked={row.default}
+                                            onChange={() => handleCheckboxChange(i, "default")}
+                                        />
+                                    </div>
                                 </TableCell>
                                 <TableCell>
-                                    <CustomCheckbox
-                                        checked={row.intlDefault}
-                                        onChange={() => handleCheckboxChange(i, "intlDefault")}
-                                    />
+
+                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                        <input
+                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            type="checkbox"
+                                            checked={row.intlDefault}
+                                            onChange={() => handleCheckboxChange(i, "intlDefault")}
+                                        />
+                                    </div>
                                 </TableCell>
                                 <TableCell className="border-r-0 font-lato text-xs flex justify-between">
                                     {row.details}

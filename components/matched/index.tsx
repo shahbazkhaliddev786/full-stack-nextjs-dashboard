@@ -1,3 +1,4 @@
+"use client"
 import MatchedTable from "@/components/matched/table";
 
 export default function MatchedDepositsPage(){
