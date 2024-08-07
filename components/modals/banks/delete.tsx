@@ -134,7 +134,7 @@ export default function DeleteModal() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-[33rem] h-[31rem] p-6 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <div className="h-[100%] w-[100%] border-red-600 border-[2px] p-4">
+                                    <div className="h-[100%] w-[100%] border-[AA322D] border-[2px] p-4">
                                      <div className="mt-[4rem]">
                                      
                                         <div className="mt-4 text-center flex flex-col items-center">
