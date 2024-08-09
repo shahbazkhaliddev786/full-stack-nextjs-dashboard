@@ -2,18 +2,17 @@ import Link from "next/link";
 import Image from "next/image";
 import AuthForm from "./form";
 
-
 export default function AccessMain() {
     return (
         <>
-            <main className="w-screen h-screen bg-gray-200 flex justify-center items-center">
-                <section className="bg-white w-[90%] max-w-[56.625rem] h-[90%] max-h-[30rem] dark:bg-gray-800 rounded-[0.625rem] flex flex-col justify-center items-center">
-                    <div className="w-full p-6 lg:p-6 lg:flex lg:justify-between lg:items-center">
+            <main className="w-screen h-screen py-[100px] px-[180px] bg-[#F0F3EE] flex justify-center items-center">
+                <section className="bg-white w-[100%] dark:bg-gray-800 rounded-[0.625rem] flex flex-col justify-center items-center">
+                    <div className="w-full pt-[20px] pl-[40px] lg:flex lg:justify-between lg:items-center">
                         <Link href="/"><Image width={191} height={59} src="/logo.png" alt="Logo" /></Link>
                     </div>
 
-                    <div className="w-full flex-grow bg-white dark:bg-gray-800 flex justify-center items-center">
-                        <div className="w-full flex flex-col px-6 mx-auto lg:flex-row lg:items-center">
+                    <div className="w-full -mt-4 flex-grow bg-white flex justify-center items-center gap-[117px]">
+                        <div className="w-full flex flex-col pl-11 mx-auto lg:flex-row lg:items-center">
 
                             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
                                 <div className="lg:max-w-lg px-11  text-center lg:text-left">
@@ -21,7 +20,7 @@ export default function AccessMain() {
                                         Request Access
                                     </h2>
 
-                                    <div className="mt-2 space-y-5">
+                                    <div className="mt-[12px]">
                                         <h4 className="flex items-center justify-center lg:justify-start text-gray-700 dark:text-gray-200">
                                             <span className="text-[15px] text-[#14302A] font-lato">Please complete the form below</span>
                                         </h4>
