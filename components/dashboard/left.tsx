@@ -4,13 +4,13 @@ import DashboardCard from "@/components/dashboard/card";
 export default function LeftSide() {
   return (
     <>
-      <div className="flex flex-col gap-[15px] w-[30%]">
+      <div className="flex flex-col gap-[15px] w-[35%]">
         <DashboardCard
           heading="Total Company Funds Under Management"
           headingColor="#FFFF"
           backgroundColor="#14302A"
           textColor="#FFF"
-          spanText="999,999,999,999,999.99"
+          spanText="999,999,999,999,999,999,999.99"
           spanTextColor="#00CE7E"
         />
 

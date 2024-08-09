@@ -19,8 +19,9 @@ export default function SettingsTab() {
                     <TabsContent value="users">
                         <div className="flex justify-end pr-4">
                             <div className="flex justify-between items-center gap-2">
-                                <Button className="rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 w-[100px] h-[40px]">Add</Button>
-                                <Button className="rounded-[10px] font-lato bg-[#AA322D] hover:bg-red-900 w-[100px] h-[40px]">Delete</Button>
+                                <Button className="bg-[#00CE7E] hover:bg-green-700 pt-[10px] pb-[11px] px-[27px] text-[16px] cursor-pointer font-lato text-white uppercase rounded-[10px] focus:outline-none">Add</Button>
+                                <Button className="bg-[#AA322D] hover:bg-red-900 pt-[10px] pb-[11px] px-[15px] text-[16px] cursor-pointer font-lato text-white uppercase rounded-[10px] focus:outline-none">Delete</Button>
+                                
                             </div>
                         </div>
                     </TabsContent>

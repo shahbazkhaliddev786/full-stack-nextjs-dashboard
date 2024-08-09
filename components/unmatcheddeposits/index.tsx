@@ -5,7 +5,7 @@ import UnMatchedTable from "@/components/unmatcheddeposits/table";
 export default function UnMatchedDeposits() {
     return (
         <>
-            <h1 className="text-2xl font-bold font-aleo my-3 text-[#188331]">Unmatched Deposits</h1>
+            <h1 className="text-[40px] font-bold font-aleo mb-[5px] text-[#188331]">Unmatched Deposits</h1>
             <Deposits />
             <SearchBars />
             <UnMatchedTable />

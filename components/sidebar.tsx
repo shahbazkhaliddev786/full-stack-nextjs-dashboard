@@ -17,36 +17,38 @@ const sidebar = [
     { label: "Archive", link: "/archive", color: "text-[#289943]" },
 ];
 
-export default function Sidebar(){
+export default function Sidebar() {
     const pathname = usePathname();
     return (
         <>
-             <aside className="bg-white h-[100vh] w-[15vw]">
-                        <nav className=" flex-shrink-0 bg-white">
-                            <div className="flex-auto  h-full">
-                                <div className="flex flex-col">
-                                    <ul className="relative m-0 p-0 list-none h-full">
-                                        <li className="text-white p-4  fle relative justify-center">
-                                            <div className=" my-1 bg-white">
-                                                <Image width={191} height={59} src="/logo.png" className="cursor-pointer" alt="Blockkain logo" />
-                                            </div>
-                                        </li>
+            <aside
+                style={{borderTopRightRadius:"10px", borderBottomRightRadius:"10px"}}
+                className="bg-white h-[100vh] w-[15vw]">
+                <nav className=" flex-shrink-0 bg-white">
+                    <div className="flex-auto h-full">
+                        <div className="flex flex-col">
+                            <ul className="relative m-0 p-0 list-none h-full">
+                                <li className="text-white p-4 flex relative justify-center">
+                                    <div className=" my-1 bg-white">
+                                        <Image width={191} height={59} src="/logo.png" className="cursor-pointer" alt="Blockkain logo" />
+                                    </div>
+                                </li>
 
-                                        {sidebar.map((item, index) => (
-                                            <li key={index} className={`flex relative px-4 mt-[12px] justify-end hover:bg-gray-100 cursor-pointer`}>
-                                                <Link href={item.link}>
-                                                <span className={`my-1 p-4 mt-[15px] text-base font-lato ${pathname === item.link ? 'text-[#00CE7E]' : 'text-[#14302A]'}`}>
-                                                        {item.label}
-                                                    </span>
-                                                </Link>
-                                            </li>
-                                        ))}
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </aside >
+                                {sidebar.map((item, index) => (
+                                    <li key={index} className={`flex relative px-4 mt-[12px] justify-end hover:bg-gray-100 cursor-pointer`}>
+                                        <Link href={item.link}>
+                                            <span className={`p-4 mt-[15px] text-[18px] font-lato ${pathname === item.link ? 'text-[#00CE7E]' : 'text-[#14302A]'}`}>
+                                                {item.label}
+                                            </span>
+                                        </Link>
+                                    </li>
+                                ))}
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </aside >
         </>
     )
 }

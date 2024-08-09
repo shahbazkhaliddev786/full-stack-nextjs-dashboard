@@ -1,4 +1,4 @@
-import { CiSearch } from "react-icons/ci";
+import Image from "next/image";
 import {
     Table,
     TableBody,
@@ -170,12 +170,12 @@ export default function UnMatchedTable() {
                         <TableRow>
                             <TableHead className="font-bold font-lato">Date</TableHead>
                             <TableHead className="font-bold font-lato">Source</TableHead>
-                            <TableHead className="font-bold border-r-0 w-[100%] flex gap-2 justify-between">
+                            <TableHead className="font-bold w-[100%] flex gap-2 justify-between">
 
                                 <h2 className="w-[30%] font-lato">Reference</h2>
-                                <div className=" bg-gray-200 -mr-[9px] border-r-2 border-gray-400 flex items-center w-[75%] justify-between">
-                                    <CiSearch className="text-black w-[15%] font-lato justify-center flex items-center  z-50" />
-                                    <input type="text" placeholder="Search" className="h-4 font-lato z-1 bg-transparent  py-3 w-[85%] focus:outline-none " />
+                                <div className=" bg-[#8C9B912B] -mr-[6px] rounded-[2px] flex items-center w-[75%] justify-between">
+                                    <Image src="/search.png" height={12} width={12} alt="search" className="text-[#8C9B91] ml-[5px] font-lato justify-center flex items-center  z-50" />
+                                    <input type="text" placeholder="Search" className="h-3 font-lato z-1 bg-transparent w-[80%] placeholder:italic focus:outline-none " />
                                 </div>
                             </TableHead>
                             <TableHead className="font-bold font-lato">Currency</TableHead>

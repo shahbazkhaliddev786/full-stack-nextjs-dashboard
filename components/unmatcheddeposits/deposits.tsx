@@ -4,7 +4,8 @@ export default function Deposits() {
     return (
         <>
             <div className="bg-white w-[100%] h-[100%] flex flex-col drop-shadow-[10px_10px_4px_#0000000D]">
-                <div className="h-[8rem] w-[100%] flex flex-col bg-[#005640]">
+                <div
+                    className="h-[8rem] w-[100%] rounded-[10px] flex flex-col bg-[#005640]">
                     <div className="w-[100%]">
                         <h3 className="text-[#00CE7E] w-8 p-3 text-xl font-lato">Unmatched Deposits</h3>
                     </div>
