@@ -6,12 +6,12 @@ export default function AccessMain() {
     return (
         <>
             <main className="w-screen h-screen py-[100px] px-[180px] bg-[#F0F3EE] flex justify-center items-center">
-                <section className="bg-white w-[100%] dark:bg-gray-800 rounded-[0.625rem] flex flex-col justify-center items-center">
-                    <div className="w-full pt-[20px] pl-[40px] lg:flex lg:justify-between lg:items-center">
+                <section style={{ boxShadow: "10px 10px 4px 0px #0000000D" }} className="bg-white w-[100%] rounded-[0.625rem] flex flex-col justify-center items-center">
+                    <div className="w-full pt-[40px] pl-[50px] lg:flex lg:justify-between lg:items-center">
                         <Link href="/"><Image width={191} height={59} src="/logo.png" alt="Logo" /></Link>
                     </div>
 
-                    <div className="w-full -mt-4 flex-grow bg-white flex justify-center items-center gap-[117px]">
+                    <div style={{ boxShadow: "10px 10px 4px 0px #0000000D" }} className="w-full -mt-4 flex-grow bg-white rounded-[10px] flex justify-center items-center gap-[117px]">
                         <div className="w-full flex flex-col pl-11 mx-auto lg:flex-row lg:items-center">
 
                             <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
