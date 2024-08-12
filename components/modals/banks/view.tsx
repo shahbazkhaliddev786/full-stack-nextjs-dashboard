@@ -50,7 +50,7 @@ export default function ViewModal() {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-lg p-6 bg-white rounded-lg shadow-xl transform transition-all">
+                                <Dialog.Panel className="w-full max-w-lg p-8 bg-white rounded-lg shadow-xl transform transition-all">
                                     <Dialog.Title className="text-[22px] text-[#005640] font-lato mb-4 font-medium text-left leading-6">
                                        View / Send Bank Account Details
                                     </Dialog.Title>
@@ -58,28 +58,28 @@ export default function ViewModal() {
                                         <form>
 
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="accountName">Account Name:</Label></div>
-                                                <div className='w-[50%]'><Input type="text" id="accountName" name="accountName" placeholder='Sample Text' className="p-2 h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="accountName">Account Name:</Label></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} type="text" id="accountName" name="accountName" placeholder='Sample Text' className="p-2 h-[2rem] text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end items-center w-[16rem] text-xs'><Label className="text-xs font-lato" htmlFor="ach">ACH And Wire Routing Number:</Label></div>
-                                                <div className='w-[14] mr-[3.4rem]'><Input type="text" id="ach" name="ach" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end items-center w-[16rem] text-xs'><Label className="text-xs font-lato text-[#14302A]" htmlFor="ach">ACH And Wire Routing Number:</Label></div>
+                                                <div className='w-[14] mr-[2.7rem]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} type="text" id="ach" name="ach" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="AccountNumber">Account Number:</Label></div>
-                                                <div className='w-[50%]'><Input type="text" id="AccountNumber" name="AccountNumber" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="AccountNumber">Account Number:</Label></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} type="text" id="AccountNumber" name="AccountNumber" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="RoutingNumber">Routing Number:</Label></div>
-                                                <div className='w-[50%]'><Input type="text" id="RoutingNumber" name="RoutingNumber" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="RoutingNumber">Routing Number:</Label></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} type="text" id="RoutingNumber" name="RoutingNumber" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-gray-200 text-green-800 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="bankAddress">Bank Address:</Label></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
-                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato" htmlFor="Reference">Reference:</Label></div>
-                                                <div className='w-[50%]'><Input type="text" id="Reference" name="Reference" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-gray-200 placeholder:text-green-800" /></div>
+                                                <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="Reference">Reference:</Label></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} type="text" id="Reference" name="Reference" placeholder='Sample Text' className="p-2 font-lato h-[2rem] text-xs border rounded w-[11rem] bg-[#F0F3EE] placeholder:text-[#005640]" /></div>
                                             </div>
                                         </form>
                                         
@@ -87,19 +87,21 @@ export default function ViewModal() {
                                     <div className="mt-4 flex flex-col justify-center space-x-2">
                                         <form>
                                             <div className='flex justify-end gap-2 mb-4 w-[20rem] ml-8'>
-                                                <div><Input type="text" id="email" name="email" placeholder='Enter Email Address' className="p-2 font-lato h-[2rem] text-xs border rounded w-[15rem] bg-gray-200 " /></div>
+                                                <div><Input type="text" id="email" name="email" placeholder='Enter Email Address' className="p-2 placeholder:italic text-[#8C9B91] font-lato h-[2rem] text-xs border rounded w-[15rem] bg-[#F0F3EE] " /></div>
                                             </div>
                                         </form>
                                         <div className="mt-2 flex justify-center space-x-2">
                                         <button
                                             onClick={toggleModal}
-                                            className="font-lato text-[14px] w-[99.77px] h-[42.48px] bg-[#00CE7E] hover:bg-green-700 text-white rounded-[10px]"
+                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                            className="font-lato text-[14px] uppercase py-[10px] px-[28px] bg-[#00CE7E] hover:bg-green-700 text-white rounded-[10px]"
                                         >
                                             Send
                                         </button>
                                         <button
                                             onClick={toggleModal}
-                                            className="font-lato text-[14px] w-[99.77px] h-[42.48px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                            className="font-lato text-[14px] uppercase py-[10px] px-[20px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </button>

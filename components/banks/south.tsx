@@ -60,28 +60,28 @@ export default function SouthAfrica() {
 
     return (
         <>
-            <div className="p-3 w-full bg-[#F0F3EE] drop-shadow-[4px_4px_4px_#0000001A]">
+            <div className="p-3 w-full bg-[#F0F3EE]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}>
                 <Table className="bg-[#F0F3EE] py-1">
                     <TableHeader>
                         <TableRow>
-                            <TableHead className="w-[100px] font-lato text-sm font-bold">Bank</TableHead>
-                            <TableHead className="font-bold font-lato text-sm ">Active</TableHead>
-                            <TableHead className="font-bold font-lato text-sm ">Rank</TableHead>
-                            <TableHead className="font-bold font-lato text-sm ">Default</TableHead>
-                            <TableHead className="font-bold font-lato text-sm ">Intl. Default</TableHead>
-                            <TableHead className="font-bold font-lato text-sm border-r-0">Details</TableHead>
+                            <TableHead className="w-[100px] font-lato text-sm font-bold text-[#14302A] ">Bank</TableHead>
+                            <TableHead className="font-bold font-lato text-sm  text-[#14302A] ">Active</TableHead>
+                            <TableHead className="font-bold font-lato text-sm  text-[#14302A] ">Rank</TableHead>
+                            <TableHead className="font-bold font-lato text-sm  text-[#14302A] ">Default</TableHead>
+                            <TableHead className="font-bold font-lato text-sm  text-[#14302A] ">Intl. Default</TableHead>
+                            <TableHead className="font-bold font-lato text-sm  text-[#14302A] border-r-0">Details</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
                         {banks.map((row, i) => (
                             <TableRow key={i}>
-                                <TableCell className="w-[15%] font-lato text-xs">{row.bank}</TableCell>
-                                <TableCell className="font-lato text-xs">{row.active}</TableCell>
-                                <TableCell className="font-lato text-xs">{row.rank}</TableCell>
+                                <TableCell className="w-[15%] font-lato text-xs text-[#14302A]">{row.bank}</TableCell>
+                                <TableCell className="font-lato text-xs text-[#14302A]">{row.active}</TableCell>
+                                <TableCell className="font-lato text-xs text-[#14302A]">{row.rank}</TableCell>
                                 <TableCell>
-                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                    <div className="p-2 flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
                                         <input
-                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            className="w-[8px] h-[8px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
                                             type="checkbox"
                                             checked={row.default}
                                             onChange={() => handleCheckboxChange(i, "default")}
@@ -89,16 +89,16 @@ export default function SouthAfrica() {
                                     </div>
                                 </TableCell>
                                 <TableCell>
-                                    <div className="p-2 flex justify-center items-center h-[20px] w-[20px] rounded-[3px] border-[2px] border-[#005640] ">
+                                    <div className="p-2 flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
                                         <input
-                                            className="w-[10px] h-[10px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
+                                            className="w-[6px] h-[6px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
                                             type="checkbox"
                                             checked={row.intlDefault}
                                             onChange={() => handleCheckboxChange(i, "intlDefault")}
                                         />
                                     </div>
                                 </TableCell>
-                                <TableCell className="flex justify-between font-lato text-xs border-r-0">
+                                <TableCell className="flex text-[#14302A] justify-between font-lato text-xs border-r-0">
                                     {row.details}
                                     <ViewModal />
                                 </TableCell>

@@ -155,30 +155,30 @@ export default function MatchedTable() {
 
     return (
         <>
-            <div className="bg-white w-[100%] h-[90%] flex flex-col p-3 drop-shadow-[10px_10px_4px_#0000000D]">
+            <div className="bg-white w-[100%] h-[90%] flex flex-col p-3" style={{boxShadow: '10px 10px 4px 0px rgba(0, 0, 0, 0.05)'}}>
                 <div className="bg-[#F0F3EE] w-[95%] flex flex-col mt-4">
                     <div className="p-1 w-full bg-white">
-                        <Table className="text-xs bg-white">
+                        <Table className="text-xs bg-white"  >
                             <TableHeader>
                                 <TableRow>
-                                    <TableHead className="font-bold font-lato">Date</TableHead>
-                                    <TableHead className="font-bold font-lato">Source</TableHead>
-                                    <TableHead className="font-bold font-lato">Reference</TableHead>
-                                    <TableHead className="font-bold font-lato">Currency</TableHead>
-                                    <TableHead className="font-bold font-lato">Funding Amount</TableHead>
-                                    <TableHead className="font-bold font-lato">Currency</TableHead>
-                                    <TableHead className="font-bold font-lato">Received Amount</TableHead>
-                                    <TableHead className="font-bold font-lato">Recipient</TableHead>
-                                    <TableHead className="font-bold font-lato">Methods</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Date</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Source</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Reference</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Currency</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Funding Amount</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Currency</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Received Amount</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Recipient</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A]">Methods</TableHead>
                                     <TableHead className="flex gap-1 justify-start items-center mt-2 border-r-0">
-                                        <div className="w-[20px] h-[20px] bg-white border-[#005640] border-[2px] flex justify-center items-center font-lato">
+                                        <div className="w-[20px] h-[20px] bg-white border-[#005640] border-[2px] ml-[3px] flex justify-center items-center font-lato">
                                             <div>
                                                 <ClientDetail />
                                             </div>
                                         </div>
                                         <Button
                                             onClick={openModal}
-                                            className="hover:bg-green-700 bg-[#005640] rounded-[2px] w-[100px] h-[20px] text-white text-[12px] font-lato"
+                                            className="hover:bg-green-700 bg-[#005640] rounded-[2px] w-[100px] ml-1 h-[20px] text-white text-[12px] font-lato"
                                         >
                                             Release
                                         </Button>
@@ -188,31 +188,31 @@ export default function MatchedTable() {
                             <TableBody>
                                 {data.map((row, index) => (
                                     <TableRow className="h-[2rem]" key={index}>
-                                        <TableCell className="w-[20rem] text-xs whitespace-nowrap font-lato">
+                                        <TableCell className="w-[20rem] text-xs whitespace-nowrap font-lato text-[#14302A]">
                                             {row.date}
                                         </TableCell>
-                                        <TableCell className="w-[4.5rem] flex text-xs font-lato py-2">
+                                        <TableCell className="w-[4.5rem] flex text-xs font-lato py-2 text-[#14302A]">
                                             {row.source}
                                         </TableCell>
-                                        <TableCell className="w-full text-xs font-lato">
+                                        <TableCell className="w-full text-xs font-lato text-[#14302A]">
                                             {row.reference}
                                         </TableCell>
-                                        <TableCell className="font-lato">
+                                        <TableCell className="font-lato text-[#14302A]">
                                             {row.currency1}
                                         </TableCell>
-                                        <TableCell className="w-[19rem] text-xs whitespace-nowrap font-lato">
+                                        <TableCell className="w-[19rem] text-xs whitespace-nowrap font-lato text-[#14302A]">
                                             {row.fundingAmount}
                                         </TableCell>
-                                        <TableCell className="flex w-full justify-between text-xs font-lato py-2">
+                                        <TableCell className="flex w-full justify-between text-xs font-lato py-2 text-[#14302A]">
                                             {row.currency2}
                                         </TableCell>
-                                        <TableCell className="w-full font-lato">
+                                        <TableCell className="w-full font-lato text-[#14302A]">
                                             {row.receivedAmount}
                                         </TableCell>
                                         <TableCell className="text-[#005640] underline w-full text-xs font-lato">
                                             {row.recipient}
                                         </TableCell>
-                                        <TableCell className={`w-full font-lato ${row.methods === "Manual" ? "underline text-[#005640]" : ""}`}>
+                                        <TableCell className={`w-full text-[#14302A] font-lato ${row.methods === "Manual" ? "underline text-[#005640]" : ""}`}>
                                             {row.methods}
                                         </TableCell>
                                         <TableCell className="flex gap-1 justify-evenly w-full items-center border-r-0 font-lato">
@@ -280,13 +280,13 @@ export default function MatchedTable() {
                                         <div className="mt-8 flex justify-center space-x-2">
                                             <Button
                                                 onClick={closeModal}
-                                                className="h-[42px] w-[99px] text-[14px] bg-[#00CE7E] hover:bg-green-600 text-white rounded-[10px] font-lato"
+                                                className="px-[20px] py-[10px] uppercase text-[14px] bg-[#00CE7E] hover:bg-green-600 text-white rounded-[10px] font-lato"
                                             >
                                                 Release
                                             </Button>
                                             <Button
                                                 onClick={closeModal}
-                                                className="h-[42px] w-[99px] text-[14px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px] font-lato"
+                                                className="px-[20px] py-[10px] uppercase text-[14px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px] font-lato"
                                             >
                                                 Cancel
                                             </Button>

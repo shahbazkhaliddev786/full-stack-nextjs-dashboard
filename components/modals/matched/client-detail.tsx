@@ -28,7 +28,7 @@ export default function ClientDetail() {
                 
             </button>
             <Transition appear show={isOpen} as={Fragment}>
-                <Dialog as="div" className="relative z-50" onClose={toggleModal}>
+                <Dialog as="div" className="relative z-50 pb-[15px]" onClose={toggleModal}>
                     <Transition.Child
                         as={Fragment}
                         enter="ease-out duration-300"
