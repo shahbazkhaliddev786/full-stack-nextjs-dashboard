@@ -51,7 +51,7 @@ export default function DeclineDetail() {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full pl-[4rem] font-lato max-w-lg p-7 bg-white rounded-lg shadow-xl transform transition-all">
-                                    <Dialog.Title className="capitalize text-left text-[26px] my-4 text-[#005640]">
+                                    <Dialog.Title className="capitalize font-bold text-left text-[26px] my-4 text-[#005640]">
                                         Decline Details?
                                     </Dialog.Title>
                                     <div className="mt-2 text-sm">
@@ -61,7 +61,7 @@ export default function DeclineDetail() {
                                                     <Label className="text-[14px] text-[#14302A]" htmlFor="DeclinedBy">Declined by:</Label>
                                                 </div>
                                                 <div className='w-[80%]'>
-                                                    <Input type="text" id="DeclinedBy" name="DeclinedBy" placeholder='Sample Text' className=" h-[2rem] text-xs border rounded w-[270px] bg-gray-200 text-green-800 placeholder:text-[#005640]" />
+                                                    <Input type="text" id="DeclinedBy" name="DeclinedBy" placeholder='Sample Text' className=" h-[2rem] text-xs border rounded w-[270px] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" />
                                                 </div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
@@ -77,7 +77,7 @@ export default function DeclineDetail() {
                                     <div className="mt-4 flex justify-center space-x-2">
                                         <Button
                                             onClick={closeModal}
-                                            className="text-[14px] h-[42.48px] w-[99.77px] mr-[3rem] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            className="text-[14px] px-[20px] py-[10px] uppercase mr-[3rem] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Close
                                         </Button>

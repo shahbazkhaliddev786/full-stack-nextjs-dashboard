@@ -25,7 +25,7 @@ export default function DeclineModal() {
         <>
             <button
                 onClick={toggleModal}
-                className="w-[14px] h-[28px] font-lato uppercase text-[23px] text-[#AA322DBF]"
+                className="w-[14px] h-[15px] font-lato uppercase text-[23px] text-[#AA322DBF]"
             >
                 X
             </button>
@@ -56,7 +56,7 @@ export default function DeclineModal() {
                             >
                                 <Dialog.Panel className="w-full px-[4rem] flex flex-col items-center border-[3px] border-[#AA322D] max-w-lg p-7 bg-white rounded-lg shadow-xl transform transition-all">
                                     <Image src="/decline.png" height={120} width={120} alt="Declined withdrawals"/>
-                                    <Dialog.Title className="text-[22px] text-[#AA322D] font-lato mt-[28px] font-medium text-left leading-6">
+                                    <Dialog.Title className="text-[22px] text-[#AA322D] font-aleo mt-[28px] font-bold text-left leading-6">
                                         Decline Withdrawals
                                     </Dialog.Title>
                                     <div className="mt-[14px] text-sm">
@@ -67,6 +67,7 @@ export default function DeclineModal() {
                                                     id="reason"
                                                     name="reason"
                                                     placeholder='Sample text'
+                                                    style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}}
                                                     className="placeholder-top-left h-[80px] placeholder:text-[#14302A] font-lato mt-[14px] text-xs border rounded bg-[#F0F3EE] text-[#14302A]"
                                                     value={reason}
                                                     onChange={(e) => setReason(e.target.value)}
@@ -77,13 +78,15 @@ export default function DeclineModal() {
                                     <div className="mt-4 flex justify-center space-x-2">
                                         <Button
                                             onClick={handleDecline}
-                                            className="text-[14px] w-[99.77px] h-[42.26px] rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
+                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                            className="text-[14px] uppercase py-[10px] px-[20px] rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
                                         >
                                             Decline
                                         </Button>
                                         <Button
                                             onClick={toggleModal}
-                                            className="text-[14px] w-[99.77px] h-[42.26px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                            className="text-[14px] uppercase py-[10px] px-[20px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </Button>

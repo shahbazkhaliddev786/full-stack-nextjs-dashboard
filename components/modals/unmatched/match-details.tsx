@@ -48,7 +48,7 @@ export default function MatchDetails() {
                                 leaveFrom="opacity-100 scale-100"
                                 leaveTo="opacity-0 scale-95"
                             >
-                                <Dialog.Panel className="w-full max-w-lg px-[2.8rem] py-7 bg-white rounded-lg shadow-xl transform transition-all flex flex-col border-[3px] border-[#00CE7E]">
+                                <Dialog.Panel style={{boxShadow: '4px 4px 10px 0px rgba(0, 0, 0, 0.1)'}} className="w-full max-w-lg px-[2.8rem] py-7 bg-white rounded-lg shadow-xl transform transition-all flex flex-col border-[3px] border-[#00CE7E]">
                                     <div className='flex flex-col justify-center items-center mx-auto'>
                                         <Image width={100} height={100} src="/match.png" alt="Release all payments" />
                                         <h2 className="capitalize text-xl mt-3 text-[#005640] font-lato">Match Details?</h2>
