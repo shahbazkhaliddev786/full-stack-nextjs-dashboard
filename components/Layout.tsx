@@ -6,6 +6,7 @@ import Sidebar from "./sidebar";
     // 1. Sidebar shadow should be over header's one.
     // 2. Sidebar border radius on top-right and bottom right.
     // 3. Header border radius on bottom right.
+    // 4. Settings Tab Head Show on every tab.
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (
