@@ -6,16 +6,16 @@ export default function SettingsTab() {
         <>
             <Tabs defaultValue="users">
                 <TabsList className="rounded-none">
-                    <TabsTrigger value="users" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Users</TabsTrigger>
-                    <TabsTrigger value="company" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Company</TabsTrigger>
-                    <TabsTrigger value="banks" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Banks</TabsTrigger>
-                    <TabsTrigger value="currencies" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Currencies</TabsTrigger>
-                    <TabsTrigger value="restrictions" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Restrictions</TabsTrigger>
-                    <TabsTrigger value="limits" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Limits</TabsTrigger>
-                    <TabsTrigger value="messages" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Messages</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="users" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Users</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="company" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Company</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="banks" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Banks</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="currencies" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Currencies</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="restrictions" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Restrictions</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="limits" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Limits</TabsTrigger>
+                    <TabsTrigger style={{boxShadow: '5px 0px 4px 0px rgba(0, 0, 0, 0.05)'}} value="messages" className="tabs-corner font-lato w-[130] h-[39] bg-[#EAEAEA]">Messages</TabsTrigger>
                 </TabsList>
 
-                <div style={{boxShadow:'10px 10px 4px 0px rgba(0, 0, 0, 0.05)'}} className="bg-white pt-[28px] pr-[27px] w-[100%] h-[25rem] flex flex-col">
+                <div style={{boxShadow: '10px 10px 4px 0px rgba(0, 0, 0, 0.05)'}} className="bg-white pt-[28px] pr-[27px] w-[100%] h-[25rem] flex flex-col drop-shadow-[10px_10px_4px_#0000000D]">
                     <TabsContent value="users">
                         <div className="flex justify-end pr-4">
                             <div className="flex justify-between items-center gap-[19px]">
@@ -35,4 +35,5 @@ export default function SettingsTab() {
             </Tabs>
         </>
     )
+
 }

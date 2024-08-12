@@ -6,7 +6,7 @@ export default function Header() {
         <>
             <header
                 style={{borderTopRightRadius:"10px", borderBottomRightRadius:"10px"}}
-                className="header flex justify-between items-center text-white bg-white h-[10vh] w-[100%] left-auto top-0 right-0 drop-shadow-[5px_0px_10px_rgba(0,0,0,0.25)]">
+                className="header z-[10] flex justify-between items-center text-white bg-white h-[10vh] w-[100%] left-auto top-0 right-0 drop-shadow-[5px_0px_10px_rgba(0,0,0,0.25)]">
                 <div className="text-black"></div>
                 <div className="h-12 px-6 flex relative items-center justify-end">
                     <div className="w-[1px] mr-1 h-8 bg-[#F0F3EE]"></div>
