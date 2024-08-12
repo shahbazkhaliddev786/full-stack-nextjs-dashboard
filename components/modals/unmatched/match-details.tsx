@@ -20,7 +20,7 @@ export default function MatchDetails() {
 
     return (
         <>
-            <Button onClick={openModal} className=" text-white font-lato bg-green-500 hover:bg-green-700 rounded-none py-0 h-6 px-4">
+            <Button onClick={openModal} className=" text-white font-lato bg-[#00CE7E] py-[3px] px-[10px] hover:bg-green-700 rounded-none h-6" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}>
                 Match
             </Button>
             <Transition appear show={isOpen} as={Fragment}>
@@ -58,19 +58,19 @@ export default function MatchDetails() {
                                         <Input placeholder='Sample Text' className="placeholder-top-left p-1 w-[20rem] h-[6rem] mt-[9px] text-xs border rounded bg-gray-200 text-green-800" />
 
                                         <div className="flex font-lato text-xs gap-1 mt-3">
-                                            <span className="mt-1">Upload proof of payment:</span>
+                                            <span className="mt-1 text-[#14302A]">Upload proof of payment:</span>
                                             <div>
-                                                <input type="file" className="relative font-lato w-1 px-0 rounded-none bg-[#8C9B91]" />
-                                                <button className="uppercase font-lato bg-[#bcc0bd] h-[1.8rem] text-xs -ml-1 w-[5rem] absolute">SELECT FILE</button>
+                                                <input type="file" className="relative font-lato w-1 px-0 rounded-none bg-[#8C9B91] placeholder:text-[#14302A]" />
+                                                <button className="uppercase font-lato bg-[#8C9B91] h-[1.8rem] text-white text-xs -ml-1 w-[5rem] absolute">SELECT FILE</button>
                                             </div>
-                                            <span className="ml-[4.7rem] mt-1 font-lato">no file uploaded</span>
+                                            <span className="ml-[4.7rem] mt-1 font-lato text-[#14302A]">no file uploaded</span>
                                         </div>
                                     </div>
                                     <div className='mt-6 flex justify-center gap-2'>
-                                        <Button className="h-[42px] w-[99px] text-[14px] font-lato bg-[#00CE7E] hover:bg-green-600 text-white rounded-[10px]" onClick={closeModal}>
+                                        <Button style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} className="py-[10px] px-[24px] uppercase text-[14px] font-lato bg-[#00CE7E] hover:bg-green-600 text-white rounded-[10px]" onClick={closeModal}>
                                             Match
                                         </Button>
-                                        <Button className="h-[42px] w-[99px] text-[14px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]" onClick={closeModal}>
+                                        <Button style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} className="py-[10px] px-[24px] uppercase text-[14px] font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]" onClick={closeModal}>
                                             Cancel
                                         </Button>
                                     </div>
