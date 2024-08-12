@@ -11,7 +11,7 @@ export default function SearchBars() {
                     <div><Input type="text" placeholder="Search by name" className="bg-[#F0F3EE] rounded-[10px] placeholder:text-[#8C9B91] font-lato focus:outline-none" /></div>
                     <div><Input type="text" placeholder="Search by name" className="bg-[#F0F3EE] rounded-[10px] placeholder:text-[#8C9B91] font-lato focus:outline-none" /></div>
                     <div><Input type="text" placeholder="Search by name" className="bg-[#F0F3EE] rounded-[10px] placeholder:text-[#8C9B91] font-lato focus:outline-none" /></div>
-                    <div><Button style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} className="bg-[#00CE7E] hover:bg-green-700 pt-[10px] pb-[11px] px-[28px] text-[16px] cursor-pointer font-lato text-white uppercase rounded-[10px] focus:outline-none">Search</Button></div>
+                    <div><Button style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} className="bg-[#00CE7E] hover:bg-green-700 pt-[10px] pb-[11px] px-[20px] text-[16px] cursor-pointer font-lato text-white uppercase rounded-[10px] focus:outline-none">Search</Button></div>
                 </div>
             </div>
         </>
