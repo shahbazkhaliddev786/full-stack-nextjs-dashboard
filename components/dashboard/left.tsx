@@ -32,7 +32,7 @@ export default function LeftSide() {
           spanTextColor="#FFF"
         />
 
-        <div className="p-3 bg-[#005640] mb-4 mt-1 rounded flex flex-col">
+        <div className="p-3 bg-[#005640] mb-4 mt-1 rounded flex flex-col" style={{boxShadow: "4px 4px 4px 0 #0000001A" }}>
           <div className="w-full -mb-3 flex justify-end">
             <Image width={15} height={15} src="/clock.png" alt="Clock Icon" />
           </div>
