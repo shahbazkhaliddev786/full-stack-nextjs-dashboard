@@ -68,7 +68,7 @@ export default function UnMatchedTable() {
                                     <TableHead className="font-bold font-lato text-[#14302A]">Other Name</TableHead>
                                     <TableHead className="font-bold font-lato text-[#14302A]">Surname</TableHead>
                                     <TableHead className="font-bold font-lato text-[#14302A]">DOB</TableHead>
-                                    <TableHead className="font-bold font-lato text-[#14302A] border-r-0">Match</TableHead>
+                                    <TableHead className="font-bold font-lato text-[#14302A] text-right border-r-0">Match</TableHead>
                                 </TableRow>
                             </TableHeader>
                             <TableBody>
@@ -81,7 +81,7 @@ export default function UnMatchedTable() {
 
                                             <TableCell className="flex justify-between font-lato py-2 text-[#14302A]">{row.surname} </TableCell>
                                             <TableCell className="w-[5.3rem] font-lato leading-[12px] py-0 text-[#14302A]">{row.dob}</TableCell>
-                                            <TableCell className="border-r-0 font-lato">
+                                            <TableCell className="border-r-0 font-lato text-right">
                                                 <MatchDetails />
                                             </TableCell>
                                         </TableRow>

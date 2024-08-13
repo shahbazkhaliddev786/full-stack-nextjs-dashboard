@@ -31,7 +31,7 @@ export default function DeleteModal() {
         <>
             <button
                 onClick={toggleModal}
-                className="py-[10px] px-[23px] w-[100%] h-[100%] uppercase text-[16px] text-white"
+                className="py-[10px] px-[21px] w-[100%] h-[100%] uppercase text-[16px] text-white"
             >
                 Delete
             </button>
@@ -84,7 +84,7 @@ export default function DeleteModal() {
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-[#F0F3EE] placeholder:text-[#AA322D]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}}/></div>
+                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="p-2 placeholder:-ml-[5px] placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-[#F0F3EE] placeholder:text-[#AA322D]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}}/></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="Reference">Reference:</Label></div>
@@ -92,18 +92,18 @@ export default function DeleteModal() {
                                             </div>
                                         </form>
                                     </div>
-                                    <div className="mt-4 flex justify-center space-x-2">
+                                    <div className="mt-4 flex justify-center gap-[1rem]">
                                         <Button
                                             onClick={openConfirmDialog}
                                             style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="text-[14px] px-[25px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
+                                            className="text-[14px] px-[22px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
                                         >
                                             Delete
                                         </Button>
                                         <Button
                                             onClick={toggleModal}
                                             style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="text-[14px] px-[22px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            className="text-[14px] px-[20px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </Button>
@@ -148,7 +148,7 @@ export default function DeleteModal() {
                                         <div className="mt-2 text-center flex flex-col items-center">
                                             <Image width={100} height={100} src="/sure.png" alt="Delete confirmation"/>
 
-                                            <Dialog.Title className="text-[36px] font-lato capitalize text-center mt-[26px] text-[#AA322D]">
+                                            <Dialog.Title className="text-[36px] font-aleo capitalize text-center mt-[26px] text-[#AA322D]">
                                                Are you sure?
                                             </Dialog.Title>
                                             <p className="mt-4 p-4 text-sm font-lato ">
@@ -158,18 +158,18 @@ export default function DeleteModal() {
                                                 Are you sure you want to delete this bank account?
                                             </p>
                                         </div>
-                                        <div className="mt-[3rem] flex justify-center space-x-4">
+                                        <div className="mt-[64.93px] flex justify-center gap-[1rem]">
                                             <Button
                                                 onClick={closeConfirmDialog}
                                                 style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                                className="text-[14px] px-[22px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
+                                                className="text-[14px] px-[20px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
                                             >
                                                 Cancel
                                             </Button>
                                             <Button
                                                 onClick={closeConfirmDialog}
                                                 style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                                className="text-[14px] px-[22px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                                className="text-[14px] px-[20px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                             >
                                                 Delete
                                             </Button>

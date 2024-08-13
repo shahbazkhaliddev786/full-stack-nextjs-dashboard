@@ -178,6 +178,7 @@ export default function MatchedTable() {
                                         </div>
                                         <Button
                                             onClick={openModal}
+                                            style={{boxShadow:'4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
                                             className="hover:bg-green-700 bg-[#005640] rounded-[2px] w-[100px] ml-1 h-[20px] text-white text-[12px] font-lato"
                                         >
                                             Release

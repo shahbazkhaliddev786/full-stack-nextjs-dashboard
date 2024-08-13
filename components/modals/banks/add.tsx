@@ -20,7 +20,7 @@ export default function AddModal() {
             <button
                 onClick={toggleModal}
                 
-                className="py-[10px] px-[32px] uppercase font-lato text-[16px] text-white"
+                className="py-[10px] px-[30px] uppercase font-lato text-[16px] text-white"
             >
                 Add
             </button>
@@ -88,7 +88,7 @@ export default function AddModal() {
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="text-[#005640] p-2 placeholder:text-[#005640] font-lato placeholder-top-left h-[110.92px] text-xs border rounded w-[11rem] bg-[#F0F3EE]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} /></div>
+                                                <div className='w-[50%]'><Input placeholder='Sample Text' className="text-[#005640] pt-2 placeholder:text-[#005640] font-lato placeholder-top-left placeholder:-ml-[5px] h-[110.92px] text-xs border rounded w-[11rem] bg-[#F0F3EE]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="Reference">Reference:</Label></div>
@@ -96,20 +96,18 @@ export default function AddModal() {
                                             </div>
                                         </form>
                                     </div>
-                                    <div className="mt-4 flex justify-center space-x-2">
+                                    <div className="mt-4 flex justify-center gap-[1rem]">
                                         <Button
                                             onClick={toggleModal}
                                             style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="text-[14px] px-[33px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
+                                            className="text-[14px] px-[29px] py-[10px] uppercase rounded-[10px] font-lato bg-[#00CE7E] hover:bg-green-700 text-white"
                                         >
                                             Save
-
-
                                         </Button>
                                         <Button
                                             onClick={toggleModal}
                                             style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="text-[14px] px-[22px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            className="text-[14px] px-[20px] py-[10px] uppercase font-lato bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
                                         >
                                             Cancel
                                         </Button>

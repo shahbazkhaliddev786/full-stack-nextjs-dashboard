@@ -11,7 +11,7 @@ export default function BanksButtons() {
                     <Button  className="rounded-[10px] text-[#8C9B91] bg-[#F0F3EE] hover:bg-slate-200 p-2 flex font-lato w-[13rem]"><Image width={20} height={40} src="/filter.png" alt="filter" className="text-black -ml-[4rem] mr-2" /> Filter by country</Button>
                     <Button className="rounded-[10px] text-[#8C9B91] bg-[#F0F3EE] hover:bg-slate-200 p-2 flex font-lato w-[13rem]"><Image width={20} height={40} src="/filter.png" alt="filter" className="text-black -ml-[4rem] mr-2" /> Filter by banks</Button>
                 </div>
-                <div className="flex justify-between items-center gap-2">
+                <div className="flex justify-between items-center gap-[1rem]">
                     <div className="bg-[#00CE7E] hover:bg-green-700 uppercase rounded-[10px]" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}>
                         <AddModal />
                     </div>

@@ -20,7 +20,7 @@ export default function MatchDetails() {
 
     return (
         <>
-            <Button onClick={openModal} className=" text-white font-lato bg-[#00CE7E] py-[3px] px-[10px] hover:bg-green-700 rounded-none h-6" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}>
+            <Button onClick={openModal} className=" text-white uppercase font-lato bg-[#00CE7E] py-[3px] px-[10px] hover:bg-green-700 rounded-none h-6" style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}>
                 Match
             </Button>
             <Transition appear show={isOpen} as={Fragment}>

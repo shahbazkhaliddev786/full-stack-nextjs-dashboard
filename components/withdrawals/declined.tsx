@@ -91,7 +91,7 @@ export default function DeclinedReleaseTable() {
                                         <div className="w-[20px] h-[20px] bg-white border-[#005640] border-[2px] flex justify-center items-center font-lato">
                                             <DeclineDetail />
                                         </div>
-                                        <Button onClick={toggleModal} className="hover:bg-green-700 bg-[#005640] rounded-[2px] ml-1 w-[100px] h-[20px] text-white text-[12px] font-lato">Release</Button>
+                                        <Button style={{boxShadow:'4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} onClick={toggleModal} className="hover:bg-green-700 bg-[#005640] rounded-[2px] ml-1 w-[100px] h-[20px] text-white text-[12px] font-lato">Release</Button>
                                         <Transition appear show={isOpen} as={Fragment}>
                                             <Dialog as="div" className="relative z-50" onClose={toggleModal}>
                                                 <Transition.Child

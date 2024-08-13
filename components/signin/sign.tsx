@@ -10,12 +10,12 @@ export default function Sign(){
                     style={{ boxShadow: "10px 10px 4px 0px #0000000D" }}
                     className="bg-white w-[100%]
                        rounded-[10px] flex flex-col justify-center items-center">
-                    <div className="w-full pt-[40px] pl-[50px] lg:flex lg:justify-between lg:items-center">
+                    <div className="w-full pt-[40px] pl-[48px] lg:flex lg:justify-between lg:items-center">
                         <Link href="/"><Image width={191} height={59} src="/logo.png" alt="logo"/></Link>
                     </div>
 
                     <div style={{ boxShadow: "10px 10px 4px 0px #0000000D" }} className="w-full flex flex-grow bg-white rounded-[10px] justify-center items-center gap-[117px]">
-                        <div className="w-full flex flex-col pl-11 lg:flex-row lg:items-center">
+                        <div className="w-full flex flex-col pl-11 lg:flex-row lg:items-center ml-[10px]">
                            
                             <div className="w-full pl-[3rem] lg:w-1/2 flex flex-col items-center lg:items-start">
                                 <div className="lg:max-w-lg text-center lg:text-left">
@@ -26,14 +26,14 @@ export default function Sign(){
                                     <div className="mt-3">
                                         <h4 className="flex items-center justify-center lg:justify-start dark:text-gray-200">
                                             <span className="text-[15px] text-[#14302A] font-lato">Please sign in</span>
-                                        </h4>
+                                        </h4> 
                                     </div>
                                 </div>
 
-                                    <AuthForm firstPlaceholder="Enter Email Address" secondPlaceHolder="Enter Password" btn="Sign In"/>
+                                    <AuthForm firstPlaceholder="Enter Email Address" secondPlaceHolder="Enter Password" btn="sign in"/>
                              
-                                <div>
-                                    <button className="text-[15px] mt-[17px] underline text-[#005640]">Request Access</button>
+                                <div className="mt-[17px]">
+                                    <Link href="/access" className="text-[15px] underline text-[#005640]">Request Access</Link>
                                 </div>
                             </div>
 

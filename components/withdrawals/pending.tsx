@@ -86,7 +86,7 @@ export default function PendingReleaseTable() {
                                                 <ClientDetail />
                                             </div>
                                         </div>
-                                        <Button onClick={toggleModal} className="hover:bg-green-700 bg-[#005640] rounded-[2px] w-[100px] h-[20px] text-white text-[12px] font-lato ml-1">Release</Button>
+                                        <Button style={{boxShadow:'4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}} onClick={toggleModal} className="hover:bg-green-700 bg-[#005640] rounded-[2px] w-[100px] h-[20px] text-white text-[12px] font-lato ml-1">Release</Button>
                                         <Transition appear show={isOpen} as={Fragment}>
                                             <Dialog as="div" className="relative z-50" onClose={toggleModal}>
                                                 <Transition.Child

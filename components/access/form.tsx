@@ -7,8 +7,6 @@ interface AuthFormProps {
     btn: string;
 }
 
-// props-types
-
 export default function AuthForm({ firstPlaceholder, secondPlaceHolder, btn }: AuthFormProps) {
     return (
         <div className="mt-[41px] w-full flex justify-center lg:justify-start">
@@ -23,7 +21,7 @@ export default function AuthForm({ firstPlaceholder, secondPlaceHolder, btn }: A
                         className="w-full bg-[#F0F3EE] px-[20.95px] py-[10.56px] placeholder-[#8C9B91] rounded-[5px] focus:outline-none focus:ring-0 dark:text-white dark:placeholder-gray-500 placeholder:italic font-lato" 
                     />
                 </div>
-                <div className="mmb-[22.74px]">
+                <div className="mb-[22.74px]">
                     <Input 
                         type="text" 
                         name="text" 
@@ -33,9 +31,12 @@ export default function AuthForm({ firstPlaceholder, secondPlaceHolder, btn }: A
                         className="w-full bg-[#F0F3EE] px-[20.95px] py-[10.56px] placeholder-[#8C9B91] rounded-[5px] focus:outline-none focus:ring-0 dark:text-white placeholder:italic font-lato" 
                     />
                 </div>
-                <div className="mt-[32px]"> 
-                    {/* // Tailwind's built-in drop-shadow utility doesn't support spread values */}
-                    <Button type="button" style={{ boxShadow: "4px 4px 4px 0px #0000001A" }} className="pt-[10px] pb-[6px] px-[20px] uppercase font-lato text-white bg-[#00CE7E] rounded-[10px] focus:outline-none hover:bg-[#04a768]">
+                <div className="mt-[32px]">
+                    <Button 
+                        type="button" 
+                        style={{ boxShadow: "4px 4px 4px 0px #0000001A" }} 
+                        className={`pt-[10px] pb-[6px] ${btn === 'sign in' ? 'px-[13px]' : 'px-[5px]'} uppercase font-lato text-white bg-[#00CE7E] rounded-[10px] focus:outline-none hover:bg-[#04a768]`}
+                    >
                         {btn}
                     </Button>
                 </div>

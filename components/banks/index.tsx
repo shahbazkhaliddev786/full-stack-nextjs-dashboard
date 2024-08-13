@@ -13,7 +13,7 @@ export default function BanksPage() {
                     <div><h2 className="text-xl font-bold text-[#005640] font-lato">South Africa</h2></div>
                     <SouthAfrica />
                 </div>
-                <div className=" w-[95%] flex flex-col mt-2">
+                <div className=" w-[95%] flex flex-col mt-6">
                     <div><h2 className="text-xl font-bold text-[#005640]">United Kingdom</h2></div>
                     <UK />
                 </div>

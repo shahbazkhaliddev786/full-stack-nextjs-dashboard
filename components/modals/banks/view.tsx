@@ -75,7 +75,7 @@ export default function ViewModal() {
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="bankAddress">Bank Address:</Label></div>
-                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} placeholder='Sample Text' className="p-2 placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
+                                                <div className='w-[50%]'><Input style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.02)'}} placeholder='Sample Text' className="p-2 placeholder:-ml-[5px] placeholder-top-left h-[110.92px] font-lato text-xs border rounded w-[11rem] bg-[#F0F3EE] text-[#005640] placeholder:text-[#005640]" /></div>
                                             </div>
                                             <div className='flex justify-center gap-2 mb-4 w-[100%]'>
                                                 <div className='flex justify-end items-center w-[50%]'><Label className="text-xs font-lato text-[#14302A]" htmlFor="Reference">Reference:</Label></div>
@@ -90,21 +90,21 @@ export default function ViewModal() {
                                                 <div><Input type="text" id="email" name="email" placeholder='Enter Email Address' className="p-2 placeholder:italic text-[#8C9B91] font-lato h-[2rem] text-xs border rounded w-[15rem] bg-[#F0F3EE] " /></div>
                                             </div>
                                         </form>
-                                        <div className="mt-2 flex justify-center space-x-2">
-                                        <button
-                                            onClick={toggleModal}
-                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="font-lato text-[14px] uppercase py-[10px] px-[28px] bg-[#00CE7E] hover:bg-green-700 text-white rounded-[10px]"
-                                        >
-                                            Send
-                                        </button>
-                                        <button
-                                            onClick={toggleModal}
-                                            style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
-                                            className="font-lato text-[14px] uppercase py-[10px] px-[20px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
-                                        >
-                                            Cancel
-                                        </button>
+                                        <div className="mt-2 flex justify-center gap-[1rem]">
+                                            <button
+                                                onClick={toggleModal}
+                                                style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                                className="font-lato text-[14px] uppercase py-[10px] px-[28px] bg-[#00CE7E] hover:bg-green-700 text-white rounded-[10px]"
+                                            >
+                                                Send
+                                            </button>
+                                            <button
+                                                onClick={toggleModal}
+                                                style={{boxShadow: '4px 4px 4px 0px rgba(0, 0, 0, 0.1)'}}
+                                                className="font-lato text-[14px] uppercase py-[10px] px-[24px] bg-[#AA322D] hover:bg-red-900 text-white rounded-[10px]"
+                                            >
+                                                Close
+                                            </button>
                                         </div>
                                     </div>
                                 </Dialog.Panel>

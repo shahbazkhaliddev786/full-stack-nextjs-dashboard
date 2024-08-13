@@ -18,7 +18,7 @@ export default function Out() {
                                 <h1 className="text-[40px] font-bold text-[#005640] font-aleo">Signed Out</h1>
                                 <p className="text-[#14302A] text-[15px] mt-3 font-lato">See you again</p>
                                 <div className=" mt-[35px]">
-                                    <Button type="button" style={{ boxShadow: "4px 4px 4px 0px #0000001A" }} className="pt-[10px] pb-[6px] px-[20px] uppercase font-lato text-white bg-[#00CE7E] rounded-[10px] focus:outline-none hover:bg-[#04a768]">
+                                    <Button type="button" style={{ boxShadow: "4px 4px 4px 0px #0000001A" }} className="pt-[10px] pb-[6px] px-[13px] uppercase font-lato text-white bg-[#00CE7E] rounded-[10px] focus:outline-none hover:bg-[#04a768]">
                                         Sign In
                                     </Button>
                                 </div>

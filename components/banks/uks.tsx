@@ -37,8 +37,8 @@ const initialUK: Bank[] = [
         details: "Currencies Receivable: EUR"
     },
     {
-        bank: "Simple",
-        active: "Yes",
+        bank: "Sample",
+        active: "No",
         rank: 3,
         default: false,
         intlDefault: false,
@@ -64,10 +64,10 @@ export default function UK() {
                     <TableHeader>
                         <TableRow>
                             <TableHead className="w-[100px] font-lato text-sm text-[#14302A] font-bold">Bank</TableHead>
-                            <TableHead className="font-bold font-lato text-sm text-[#14302A]">Active</TableHead>
-                            <TableHead className="font-bold font-lato text-sm text-[#14302A]">Rank</TableHead>
-                            <TableHead className="font-bold font-lato text-sm text-[#14302A]">Default</TableHead>
-                            <TableHead className="font-bold font-lato text-sm text-[#14302A]">Intl. Default</TableHead>
+                            <TableHead className="font-bold font-lato text-sm text-[#14302A] text-center">Active</TableHead>
+                            <TableHead className="font-bold font-lato text-sm text-[#14302A] text-center">Rank</TableHead>
+                            <TableHead className="font-bold font-lato text-sm text-[#14302A] text-center">Default</TableHead>
+                            <TableHead className="font-bold font-lato text-sm text-[#14302A] text-center">Intl. Default</TableHead>
                             <TableHead className="font-bold font-lato text-sm text-[#14302A] border-r-0">Details</TableHead>
                         </TableRow>
                     </TableHeader>
@@ -75,11 +75,11 @@ export default function UK() {
                         {banks.map((row, i) => (
                             <TableRow key={i}>
                                 <TableCell className="uppercase text-[#14302A] font-lato text-xs">{row.bank}</TableCell>
-                                <TableCell className="font-lato text-xs text-[#14302A]">{row.active}</TableCell>
-                                <TableCell className="font-lato text-xs text-[#14302A]">{row.rank}</TableCell>
+                                <TableCell className="font-lato text-xs text-[#14302A] text-center">{row.active}</TableCell>
+                                <TableCell className="font-lato text-xs text-[#14302A] text-center">{row.rank}</TableCell>
                                 <TableCell>
 
-                                    <div className="p-2 flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
+                                    <div className="p-[8px] ml-[3.2rem] flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
                                         <input
                                             className="w-[6px] h-[6px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
                                             type="checkbox"
@@ -90,7 +90,7 @@ export default function UK() {
                                 </TableCell>
                                 <TableCell>
 
-                                    <div className="p-2 flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
+                                    <div className="p-2 ml-[3.2rem] flex justify-center items-center h-[15px] w-[15px] rounded-[3px] border-[2px] border-[#005640] ">
                                         <input
                                             className="w-[8px] h-[8px] appearance-none rounded-[3px] border-[2px] border-[#F0F3EE] checked:bg-[#005640] checked:border-[#005640] checked:p-[5px]"
                                             type="checkbox"
